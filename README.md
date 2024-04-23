@@ -1,8 +1,5 @@
-# React + Vite
+# Empower Minds
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Empower Minds adalah platform daring yang didedikasikan untuk menguatkan komunikasi terkait stres akademik di kalangan mahasiswa.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Platform ini memberikan dukungan yang dibutuhkan dalam mengatasi tekanan akademik, stres, dan kecemasan yang sering terjadi pada mereka.
