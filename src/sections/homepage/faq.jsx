@@ -1,5 +1,5 @@
 import Accordion from '../../components/accordion/accordion';
-import question from './../../assets/illustration/faq.svg';
+import question from './../../assets/illustrations/faq.svg';
 
 export function Faq() {
     return (

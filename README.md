@@ -1,5 +1,3 @@
-# Empower Minds
+# Speak Up!
 
-Empower Minds adalah platform daring yang didedikasikan untuk menguatkan komunikasi terkait stres akademik di kalangan mahasiswa.
-
-Platform ini memberikan dukungan yang dibutuhkan dalam mengatasi tekanan akademik, stres, dan kecemasan yang sering terjadi pada mereka.
+Website yang mendukung untuk pengaduan kekerasan mahasiswa yang terjadi di lingkungan kampus dan dapat memantau status penyelidikan dan tindakan yang diambil.
