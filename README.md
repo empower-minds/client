@@ -1,3 +1,17 @@
-# Speak Up!
+# Empower Minds
 
-Website yang mendukung untuk pengaduan kekerasan mahasiswa yang terjadi di lingkungan kampus dan dapat memantau status penyelidikan dan tindakan yang diambil.
+Platform yang memberikan dukungan yang dibutuhkan dalam mengatasi tekanan akademik, stres, dan kecemasan yang sering terjadi pada mereka.
+
+### Installation
+
+Install semua dependensi yang diperlukan:
+
+```sh
+npm install
+```
+
+### Run Project
+
+```sh
+npm run dev
+```
