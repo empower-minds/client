@@ -1,4 +1,4 @@
-import about from './../../assets/illustration/About.svg';
+import about from './../../assets/illustrations/About.svg';
 
 export function About() {
     return (

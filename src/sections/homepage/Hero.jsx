@@ -1,4 +1,4 @@
-import Stress from './../../assets/illustration/stress illustration.png';
+import Stress from './../../assets/illustrations/stress illustration.png';
 
 export default function Hero() {
     return (

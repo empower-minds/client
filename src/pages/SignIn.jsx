@@ -1,5 +1,5 @@
-import Quote from './../assets/illustration/Image with Quote.png';
-import Quote2 from './../assets/illustration/Image with Quote without radius.png';
+import Quote from './../assets/illustrations/Image with Quote.png';
+import Quote2 from './../assets/illustrations/Image with Quote without radius.png';
 import { FaArrowLeftLong } from "react-icons/fa6";
 
 export function SignIn() {
@@ -63,7 +63,7 @@ export function SignIn() {
                       type="submit"
                       className="mt-10 flex w-full justify-center rounded-md border border-transparent bg-[#5182CC] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#0A86CC] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >
-                      Sign in
+                      <a href='/dashboard'>Sign in</a>
                     </button>
                     <a href='/' className="text-[#5182CC] block mt-4 pb-10 flex items-center justify-center lg:justify-start">
                       <FaArrowLeftLong className="mr-2 text-[#5182CC]" aria-hidden="true" />
