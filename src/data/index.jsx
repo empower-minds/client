@@ -381,10 +381,4 @@ export const articles = [
     desc: "How it’s used to treat mood disorders",
     image: StressedWoman, // Hilangkan kurung kurawal
   },
-  
-  {
-    title: "Stress Management",
-    desc: "How to reduce, prevent, and relieve stress",
-    image: Relax, // Hilangkan kurung kurawal
-  },
 ];
