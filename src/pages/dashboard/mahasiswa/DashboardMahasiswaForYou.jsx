@@ -17,12 +17,12 @@ export function DashboardMahasiswaForYou() {
                 <div className="w-full">
                     <p className='poppins-medium text-[#5182CC] py-4'>Top Recommendation</p>
                     <div className='flex flex-wrap'>
-                        {articles.map((feature, index) => (
+                        {articles.map((article, index) => (
                             <ArticleCard
                                 key={index}
-                                imageSrc={feature.image}
-                                title={feature.title}
-                                description={feature.desc}
+                                imageSrc={article.gambar}
+                                title={article.judul}
+                                description={article.isi_artikel}
                             />
                         ))}
                     </div>

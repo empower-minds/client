@@ -14,7 +14,7 @@ export default function ProfileMenu() {
                 <Menu.Button className="flex w-full max-w-sm items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                     <span className="sr-only">Open user menu</span>
                     <HiOutlineUserCircle className="h-10 w-10 mr-2 rounded-full stroke-1" />
-                    <div>
+                    <div className='mr-2'>
                         <h5 className='text-left font-semibold'>Tiara Putri</h5>
                         <p className="text-gray-500 font-light">Mahasiswa</p>
                     </div>
