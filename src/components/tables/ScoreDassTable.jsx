@@ -7,7 +7,7 @@ export default function ScoreDassTable() {
                 <thead className="bg-blue-500">
                     <tr>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
-                            NRP
+                            Nama
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
                             Total Skor Depresi
