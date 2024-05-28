@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { LayoutDashboardMahasiswa } from '../containers/dashboard/LayoutDashboardMahasiswa';
 import LayoutDashboard from '../containers/dashboard/LayoutDashboard';
+import { ProtectedRoute } from '../components/ProtectedRoute';
 
 export const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ export const router = createBrowserRouter([
   },
   {
     path: '/dashboard',
-    element: <LayoutDashboardMahasiswa/>,
+    element: (
+      <ProtectedRoute userRole="Mahasiswa">
+        <LayoutDashboardMahasiswa/>
+      </ProtectedRoute>
+    ),
     children: [
       {
         index: true,
@@ -67,7 +72,11 @@ export const router = createBrowserRouter([
   },
   {
     path: '/dashboard/admin',
-    element: <LayoutDashboard/>,
+    element: (
+      <ProtectedRoute userRole="Admin">
+        <LayoutDashboard/>
+      </ProtectedRoute>
+    ),
     children: [
       {
         index: true,
@@ -123,6 +132,37 @@ export const router = createBrowserRouter([
         async lazy() {
           let { DashboardAdminFeedback } = await import('../pages/dashboard/admin/DashboardAdminFeedback');
           return { Component: DashboardAdminFeedback };
+        },
+      },
+    ],
+  },
+  {
+    path: '/dashboard/penulis',
+    element: (
+      <ProtectedRoute userRole="Penulis">
+        <LayoutDashboard/>
+      </ProtectedRoute>
+    ),
+    children: [
+      {
+        index: true,
+        async lazy() {
+          let { DashboardPenulisHome } = await import('../pages/dashboard/penulis/DashboardPenulisHome');
+          return { Component: DashboardPenulisHome };
+        },
+      },
+      {
+        path: 'article',
+        async lazy() {
+          let { DashboardPenulisArticle } = await import('../pages/dashboard/penulis/DashboardPenulisArticle');
+          return { Component: DashboardPenulisArticle };
+        },
+      },
+      {
+        path: 'feedback',
+        async lazy() {
+          let { DashboardPenulisFeedback } = await import('../pages/dashboard/penulis/DashboardPenulisFeedback');
+          return { Component: DashboardPenulisFeedback };
         },
       },
     ],

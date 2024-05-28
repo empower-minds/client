@@ -53,6 +53,12 @@ export const sidebarAdmin = [
   { name: "Feedback", href: "/dashboard/admin/feedback", icon: ChatBubbleBottomCenterIcon },
 ];
 
+export const sidebarPenulis = [
+  { name: "Dashboard", href: "/dashboard/penulis", icon: HomeIcon },
+  { name: "Article", href: "/dashboard/penulis/article", icon: NewspaperIcon },
+  { name: "Feedback", href: "/dashboard/penulis/feedback", icon: ChatBubbleBottomCenterIcon },
+];
+
 export const navigation = [
   {
     href: window.location.pathname === "/" ? "/#home" : "/",
@@ -690,6 +696,13 @@ export const stats = [
   { title: "All Schedule", value: 5 },
   { title: "Waiting List", value: 10 },
   { title: "User Completed DASS", value: skorDassData.length },
+];
+
+export const dashboardPenulisStats = [
+  { title: "Article", value: articles.length },
+  { title: "Feedback Stress", value: 5 },
+  { title: "Feedback Depresi", value: 5 },
+  { title: "Feedback Kecemasan", value: 5 },
 ];
 
 export const storyStats = [
