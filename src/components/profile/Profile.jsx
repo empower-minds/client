@@ -1,8 +1,14 @@
-import { Fragment } from 'react';
+import { Fragment, useContext, useEffect } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
 import { Menu, Transition } from '@headlessui/react';
 import { HiOutlineUserCircle, HiChevronDown } from 'react-icons/hi';
 
 export default function ProfileMenu() {
+    const { auth, setAuth } = useContext(AuthContext);
+
+    useEffect(() => {
+        console.log('Auth context:', auth);
+    }, [auth]);
 
     function handleSignOut() {
         setAuth(null);
@@ -14,9 +20,9 @@ export default function ProfileMenu() {
                 <Menu.Button className="flex w-full max-w-sm items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                     <span className="sr-only">Open user menu</span>
                     <HiOutlineUserCircle className="h-10 w-10 mr-2 rounded-full stroke-1" />
-                    <div>
-                        <h5 className='text-left font-semibold'>Tiara Putri</h5>
-                        <p className="text-gray-500 font-light">Mahasiswa</p>
+                    <div className='mr-2'>
+                        <h5 className='text-gray-700 text-left font-semibold'>{auth?.user?.nama}</h5>
+                        <p className="text-gray-500 text-left font-light">{auth?.user?.role}</p>
                     </div>
                     <HiChevronDown className='ml-auto' />
                 </Menu.Button>
