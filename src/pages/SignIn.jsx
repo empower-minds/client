@@ -10,6 +10,7 @@ export function SignIn() {
   const { auth, setAuth } = useContext(AuthContext);
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: '', password: '' });
+  const [error, setError] = useState(null); // State untuk menyimpan pesan kesalahan
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,6 +38,7 @@ export function SignIn() {
         console.log('Unknown role:', role);
       }
     } catch (error) {
+      setError(error.response ? error.response.data.message : 'Sign-in failed'); // Set pesan kesalahan
       console.error('Sign-in failed:', error.message);
     }
   };
@@ -70,6 +72,7 @@ export function SignIn() {
           <div className="mt-4">
             <div className="mt-6">
               <form onSubmit={handleSubmit} className="space-y-6">
+                {error && <div className="bg-red-100 text-red-700 p-2 rounded">{error}</div>} {/* Alert pesan kesalahan */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email address</label>
                   <div className="mt-1">
